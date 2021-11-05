@@ -24,7 +24,7 @@ Description: This app will perform following basic mathmatic operations:
  
  
      //First time
-     Edit text: 0 (Initially)
+     Edit text: Blank (Initially)
      30+40
      O/P: 70
 
@@ -37,7 +37,7 @@ Description: This app will perform following basic mathmatic operations:
  
  
      //First time
-     Edit text: 0 (Initially)
+     Edit text: Blank (Initially)
      30+40
      O/P: 70
 
