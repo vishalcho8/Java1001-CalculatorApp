@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--
+    Learn about Relative layout: https://developer.android.com/guide/topics/ui/layout/relative
+     -->
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etInput"
+            android:layout_marginTop="60dp"
+            android:text="7"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnSeven"
+            android:layout_alignBottom="@+id/btnSeven"
+            android:layout_toEndOf="@+id/btnSeven"
+            android:layout_toRightOf="@+id/btnSeven"
+            android:text="8"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnNine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnEight"
+            android:layout_alignBottom="@+id/btnEight"
+            android:layout_toEndOf="@+id/btnEight"
+            android:layout_toRightOf="@+id/btnEight"
+            android:text="9"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnTwo"
+            android:layout_toEndOf="@+id/btnOne"
+            android:layout_toRightOf="@+id/btnOne"
+            android:text="0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnEight"
+            android:layout_toEndOf="@+id/btnFour"
+            android:layout_toRightOf="@+id/btnFour"
+            android:text="5"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNine"
+            android:layout_toEndOf="@+id/btnFive"
+            android:layout_toRightOf="@+id/btnFive"
+            android:text="6"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSeven"
+            android:layout_alignStart="@+id/btnSeven"
+            android:layout_below="@+id/btnSeven"
+            android:text="4"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnFive"
+            android:layout_toEndOf="@+id/btnOne"
+            android:layout_toRightOf="@+id/btnOne"
+            android:text="2"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnFour"
+            android:layout_alignStart="@+id/btnFour"
+            android:layout_below="@+id/btnFour"
+            android:text="1"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSix"
+            android:layout_toEndOf="@+id/btnFive"
+            android:layout_toRightOf="@+id/btnFive"
+            android:text="3"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnSix"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/gray"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnAdd"
+            android:layout_alignStart="@+id/btnAdd"
+            android:layout_below="@+id/btnAdd"
+            android:backgroundTint="@color/gray"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnSub"
+            android:layout_alignStart="@+id/btnSub"
+            android:layout_below="@+id/btnSix"
+            android:backgroundTint="@color/gray"
+            android:text="*"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnMul"
+            android:layout_alignStart="@+id/btnMul"
+            android:layout_below="@+id/btnOne"
+            android:backgroundTint="@color/gray"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnZero"
+            android:layout_toEndOf="@+id/btnZero"
+            android:layout_toRightOf="@+id/btnZero"
+            android:backgroundTint="@color/green"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnOne"
+            android:layout_toLeftOf="@+id/btnTwo"
+            android:layout_toStartOf="@+id/btnTwo"
+            android:text="1/x"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnThree"
+            android:layout_toEndOf="@+id/btnTwo"
+            android:layout_toRightOf="@+id/btnTwo"
+            android:text="."
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btnDiv"
+            android:backgroundTint="@color/red"
+            android:text="clear"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnInverse"
+            android:layout_toEndOf="@+id/btnSqrt"
+            android:layout_toRightOf="@+id/btnSqrt"
+            android:text="SQ"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSqrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnZero"
+            android:text="SQRT"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvNote1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Note:"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:layout_below="@+id/btnSqrt" />
+
+        <TextView
+            android:id="@+id/tvNote2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="1) SQRT -> SQUARE ROOT"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:layout_below="@+id/tvNote1" />
+
+        <TextView
+            android:id="@+id/tvNote3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="2) SQ -> SQUARE"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:layout_below="@+id/tvNote2" />
+
+        <TextView
+            android:id="@+id/tvNote4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="3) 1/x -> 1 divided by Given number. Where X is a given number."
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:layout_below="@+id/tvNote3" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
